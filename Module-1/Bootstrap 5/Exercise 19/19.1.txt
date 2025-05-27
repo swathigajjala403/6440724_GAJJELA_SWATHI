@@ -1,0 +1,13 @@
+Set up Bootstrap 5 project with Sass using npm
+Step 1: Initialize npm project
+Open your terminal and create a project folder, then:
+
+bash
+Copy code
+mkdir bootstrap-sass-project
+cd bootstrap-sass-project
+npm init -y
+Step 2: Install Bootstrap and Sass
+bash
+Copy code
+npm install bootstrap sass

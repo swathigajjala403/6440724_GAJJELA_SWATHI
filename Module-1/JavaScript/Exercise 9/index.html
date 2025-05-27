@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Async JS & Fetch Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    #eventsContainer {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .event-card {
+      background: #f0f0f0;
+      padding: 15px;
+      border-radius: 8px;
+      width: 220px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    #loading {
+      font-size: 1.2em;
+      color: #007bff;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Community Events (Async Fetch)</h1>
+  <button id="fetchThenBtn">Fetch Events (.then/.catch)</button>
+  <button id="fetchAsyncBtn">Fetch Events (async/await)</button>
+
+  <div id="loading" style="display:none;">Loading events...</div>
+  <div id="eventsContainer"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

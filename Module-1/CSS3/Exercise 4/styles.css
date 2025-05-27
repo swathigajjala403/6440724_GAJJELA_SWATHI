@@ -1,0 +1,43 @@
+/* Body with light fallback color + background image */
+body {
+  background-color: #f0f4f8; /* very light blue/grey fallback */
+  background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  color: rgba(34, 49, 63, 0.9); /* dark slate text with slight transparency */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 25px;
+}
+
+/* Header with soft pastel background */
+#mainHeader {
+  background-color: #a7c7e7; /* pastel blue */
+  padding: 25px 15px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(167, 199, 231, 0.6);
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #143d59; /* darker blue text */
+}
+
+/* Section header with vertical gradient */
+.upcoming-events h2 {
+  background: linear-gradient(180deg, #ffb347, #ffcc33); /* warm yellow gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Paragraph styling */
+.upcoming-events p {
+  color: rgba(34, 49, 63, 0.75);
+  font-size: 1.15rem;
+  max-width: 650px;
+  line-height: 1.6;
+}
+

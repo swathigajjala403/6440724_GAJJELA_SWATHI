@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debugging Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      margin: 20px;
+    }
+    /* Intentional mistake: wrong property name */
+    .box {
+      bakground-color: red; /* Typo: should be 'background-color' */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Debugging with Chrome DevTools</h1>
+  <div class="box"></div>
+
+  <script>
+    const box = document.querySelector('.box');
+    
+    // Intentional mistake: typo in function name
+    box.addeventListener('click', function() {
+      console.log("Box clicked!");
+    });
+
+    // Debug this by setting breakpoints or watching the console
+  </script>
+
+</body>
+</html>

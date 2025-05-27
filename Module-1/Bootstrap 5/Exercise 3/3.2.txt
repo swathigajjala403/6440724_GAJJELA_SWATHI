@@ -1,0 +1,10 @@
+.container → Centers and gives padding to content.
+
+.row → Wraps column elements and creates horizontal layout.
+
+.col-12 → Full width on extra-small (mobile) screens.
+
+.col-md-6 → Half width (2 per row) on medium devices (≥768px).
+
+.col-lg-4 → One-third width (3 per row) on large devices (≥992px).
+

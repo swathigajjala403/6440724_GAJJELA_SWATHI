@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Portal with Closures & Callbacks</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #events { margin-bottom: 20px; }
+    .event { margin-bottom: 10px; }
+    label, input, select, button { margin: 5px 0; display: block; }
+    .message { margin-top: 10px; color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Community Event Portal</h1>
+
+  <section>
+    <h2>Add New Event</h2>
+    <label>Event Name: <input type="text" id="eventName" /></label>
+    <label>Event Date: <input type="date" id="eventDate" /></label>
+    <label>Seats Available: <input type="number" id="eventSeats" min="1" /></label>
+    <label>Category: 
+      <select id="eventCategory">
+        <option value="Social">Social</option>
+        <option value="Technology">Technology</option>
+        <option value="Lifestyle">Lifestyle</option>
+      </select>
+    </label>
+    <button onclick="handleAddEvent()">Add Event</button>
+  </section>
+
+  <section>
+    <h2>Filter Events by Category</h2>
+    <select id="filterCategory" onchange="handleFilter()">
+      <option value="">-- All Categories --</option>
+      <option value="Social">Social</option>
+      <option value="Technology">Technology</option>
+      <option value="Lifestyle">Lifestyle</option>
+    </select>
+  </section>
+
+  <section>
+    <h2>Available Events</h2>
+    <div id="events"></div>
+  </section>
+
+  <div id="message" class="message"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

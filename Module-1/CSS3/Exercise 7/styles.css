@@ -1,0 +1,32 @@
+/* Basic table styles */
+.events-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Table header */
+.events-table th {
+  border: 2px solid #007BFF;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+}
+
+/* Table data cells */
+.events-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Zebra striping for even rows */
+.events-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+.events-table tbody tr:hover {
+  background-color: #cce5ff;
+}

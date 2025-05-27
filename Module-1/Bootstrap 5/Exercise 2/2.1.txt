@@ -1,0 +1,33 @@
+When you download Bootstrap (from https://getbootstrap.com/docs/5.3/getting-started/download/), the folder typically contains these main folders/files:
+
+python
+Copy
+Edit
+bootstrap/
+├── css/
+│   ├── bootstrap.css            # Full, unminified CSS file for Bootstrap styles
+│   ├── bootstrap.min.css        # Minified CSS (compressed, production-ready)
+│   └── bootstrap.rtl.min.css    # Minified RTL (right-to-left) CSS
+│
+├── js/
+│   ├── bootstrap.bundle.js      # Full Bootstrap JS + Popper.js (unminified)
+│   ├── bootstrap.bundle.min.js  # Minified Bootstrap JS + Popper.js (production)
+│   ├── bootstrap.js             # Bootstrap JS without Popper (unminified)
+│   └── bootstrap.min.js         # Minified Bootstrap JS without Popper
+│
+├── icons/
+│   ├── bootstrap-icons.css      # CSS for Bootstrap Icons (optional separate icon library)
+│   ├── fonts/                   # Font files for icons in various formats (woff, ttf, etc.)
+│   └── ...                     # SVG or icon files used by Bootstrap Icons
+│
+├── ...                         # Other files like source maps, documentation, etc.
+Purpose of Each Folder:
+css/
+Contains all CSS stylesheets needed for Bootstrap’s styling of components, grid, utilities, and responsive behavior.
+
+js/
+Contains JavaScript files that enable interactive components like modals, dropdowns, tooltips, carousels, etc.
+bootstrap.bundle.min.js includes both Bootstrap’s JS and Popper.js (needed for dropdown positioning and tooltips).
+
+icons/
+Contains Bootstrap Icons library files, a separate open-source icon set designed to integrate seamlessly with Bootstrap.

@@ -1,0 +1,21 @@
+/* Header styles */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Subheading styles */
+.subheading {
+  color: #2c3e50;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Event info paragraph */
+.event-info {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: #34495e;
+  line-height: 1.5;
+}

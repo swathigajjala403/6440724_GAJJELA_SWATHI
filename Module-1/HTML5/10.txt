@@ -1,0 +1,77 @@
+1. Inspect Element to Modify Styles (Live CSS Editing)
+Steps:
+
+Open Chrome → Right-click on any element → Click Inspect.
+
+The Elements tab shows the HTML and associated CSS.
+
+Use the selector tool (arrow icon) to select any element.
+
+In the Styles pane on the right, you can:
+
+Change values like font-size, color, margin, etc.
+
+Add new rules or disable existing ones (checkbox).
+
+Use the Computed tab to examine margin, border, padding, etc.
+
+📝 Great for testing changes before editing your CSS file.
+
+2. Use the Console Tab to View Logs and Errors
+Steps:
+
+Open DevTools → Console tab.
+
+Use console.log() in your JavaScript code to display messages.
+
+See runtime errors (e.g. syntax errors, missing functions).
+
+You can also interact with variables directly from the console.
+
+Example:
+
+javascript
+Copy code
+console.log("Button clicked");
+console.error("Something went wrong");
+3. Add JavaScript Breakpoints
+Steps:
+
+Go to the Sources tab.
+
+Open your JavaScript file from the left panel.
+
+Click on the line number to add a breakpoint.
+
+Reload the page → Execution pauses at the breakpoint.
+
+You can:
+
+Inspect variables in Scope
+
+Step through the code line by line
+
+Watch expressions or modify them on the fly
+
+🔁 Useful for tracking down where something breaks or goes wrong.
+
+4. Check Network Tab (CSS and JS loading)
+Steps:
+
+Open DevTools → Network tab
+
+Refresh the page (F5).
+
+Look for your style.css or JS file in the list.
+
+Status 200 = successfully loaded.
+
+Red or 404 = file not found or loading issue.
+
+5. VS Code Tips
+Use Live Server to instantly preview changes.
+
+Use extensions like Prettier or Linting to clean up CSS/JS.
+
+Use built-in terminal and debugger for advanced workflows.
+

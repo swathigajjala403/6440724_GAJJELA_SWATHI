@@ -1,0 +1,50 @@
+1. Chrome DevTools for Responsive Testing
+Open DevTools:
+Right Click > Inspect or Ctrl+Shift+I (Windows) / Cmd+Option+I (Mac)
+
+Device Toolbar:
+Click  icon or Ctrl+Shift+M to simulate screen sizes.
+
+Select Device:
+Choose from iPhone, iPad, etc., or manually resize.
+
+Purpose:
+✅ Test responsive design
+✅ View how layout behaves on small/big screens
+
+📝 2. Inspect and Modify Styles
+Use the Select Tool (top-left arrow icon) to click elements.
+
+View applied styles in the Styles pane:
+
+Test font sizes, padding, width, etc.
+
+Add or modify CSS live (temporary only).
+
+Tip: Helps quickly identify layout issues.
+
+🌐 3. Network Tab – Check External CSS
+Open the Network tab in DevTools.
+
+Reload the page (F5) and look for:
+
+Your CSS file (e.g., style.css, bootstrap.min.css)
+
+Status 200/304 = Loaded OK
+
+Status 404 = Missing/incorrect path
+
+✅ Ensures your external stylesheets are correctly linked.
+
+💻 4. VS Code Tips
+Use Live Server Extension:
+
+Auto-refresh browser on file save.
+
+Right-click HTML > "Open with Live Server"
+
+Use Emmet & IntelliSense:
+
+Speed up HTML/CSS coding
+
+Get suggestions and shortcuts

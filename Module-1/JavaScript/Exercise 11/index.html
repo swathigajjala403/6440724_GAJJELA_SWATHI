@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Registration Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; max-width: 400px; }
+    form { display: flex; flex-direction: column; gap: 12px; }
+    label { font-weight: bold; }
+    input, select {
+      padding: 8px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    button {
+      padding: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #successMessage {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Register for an Event</h1>
+
+  <form id="registrationForm" novalidate>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
+    <div id="nameError" class="error"></div>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <div id="emailError" class="error"></div>
+
+    <label for="event">Select Event:</label>
+    <select id="event" name="event">
+      <option value="">--Choose an event--</option>
+      <option value="Music Concert">Music Concert</option>
+      <option value="Art Exhibition">Art Exhibition</option>
+      <option value="Tech Meetup">Tech Meetup</option>
+      <option value="Jazz Night">Jazz Night</option>
+      <option value="Cooking Workshop">Cooking Workshop</option>
+    </select>
+    <div id="eventError" class="error"></div>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <div id="successMessage"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

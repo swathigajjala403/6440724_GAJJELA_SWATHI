@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJAX Registration</title>
+  <style>
+    body { font-family: Arial; margin: 30px; max-width: 400px; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    input, select {
+      padding: 8px;
+      font-size: 1em;
+    }
+    button {
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .message { margin-top: 15px; font-weight: bold; }
+    .loading { color: orange; }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+  <h2>Event Registration</h2>
+
+  <form id="registrationForm">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <select name="event" required>
+      <option value="">-- Select Event --</option>
+      <option value="Music Concert">Music Concert</option>
+      <option value="Tech Meetup">Tech Meetup</option>
+      <option value="Art Workshop">Art Workshop</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="responseMessage" class="message"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

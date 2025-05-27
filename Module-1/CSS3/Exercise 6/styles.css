@@ -1,0 +1,62 @@
+/* --- Link Styles --- */
+a:link {
+  color: #007bff;          /* blue */
+  text-decoration: none;
+}
+
+a:visited {
+  color: #551a8b;          /* purple */
+}
+
+a:hover {
+  color: #0056b3;          /* dark blue */
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff4500;          /* orange-red */
+}
+
+/* --- Navigation Menu Styling --- */
+.nav-menu ul {
+  list-style-type: none;   /* remove bullets */
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.nav-menu li {
+  padding: 5px 10px;
+}
+
+.nav-menu .nav-link {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* --- Custom List Styling --- */
+.custom-list {
+  list-style-type: square;        /* square bullets */
+  list-style-position: inside;    /* bullets inside the list */
+  padding-left: 0;
+  max-width: 400px;
+}
+
+.custom-list li {
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+
+.custom-list a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.custom-list a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}

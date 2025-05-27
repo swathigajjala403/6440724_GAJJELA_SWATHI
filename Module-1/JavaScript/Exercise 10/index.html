@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern JS Features Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #eventsContainer {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .event-card {
+      border: 1px solid #ccc;
+      padding: 12px;
+      border-radius: 6px;
+      width: 220px;
+      box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+    }
+    .event-name {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Community Events (Modern JS)</h1>
+  
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter">
+    <option value="all">All</option>
+    <option value="Music">Music</option>
+    <option value="Art">Art</option>
+    <option value="Tech">Tech</option>
+    <option value="Workshop">Workshop</option>
+  </select>
+
+  <div id="eventsContainer"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

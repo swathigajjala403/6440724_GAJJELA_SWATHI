@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Object Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #0066cc;
+    }
+    .event-details {
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin-top: 20px;
+    }
+    .availability {
+      font-weight: bold;
+      margin-top: 10px;
+      color: green;
+    }
+    .unavailable {
+      color: red;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      padding: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Event Object and Prototype Demo</h1>
+
+  <button id="showEventBtn">Show Event Details</button>
+
+  <div class="event-details" id="eventDetails" style="display:none;">
+    <h2 id="eventName"></h2>
+    <p><strong>Category:</strong> <span id="eventCategory"></span></p>
+    <p><strong>Date:</strong> <span id="eventDate"></span></p>
+    <p><strong>Seats Available:</strong> <span id="eventSeats"></span></p>
+    <p id="availability" class="availability"></p>
+
+    <h3>All Properties:</h3>
+    <ul id="propsList"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

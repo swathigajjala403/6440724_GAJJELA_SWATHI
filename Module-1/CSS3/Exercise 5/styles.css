@@ -1,0 +1,53 @@
+/* Import Google Fonts (alternative method if you prefer) */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap'); */
+
+/* Body default font */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+/* Header styles */
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.header .tagline {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #666;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* Section heading */
+.description h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Section paragraph */
+.description p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  color: #444;
+}

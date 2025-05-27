@@ -1,0 +1,62 @@
+Customize primary colors and border radius via _variables.scss and recompile Bootstrap
+Step 3: Create a custom Sass file to override Bootstrap variables
+Inside your project folder, create a folder named scss, then create a file custom.scss inside it:
+
+markdown
+Copy code
+bootstrap-sass-project/
+  scss/
+    custom.scss
+Step 4: Customize variables and import Bootstrap
+Open scss/custom.scss and add:
+
+scss
+Copy code
+// Override Bootstrap variables before importing Bootstrap
+$primary: #ff5722; // Custom primary color (deep orange)
+$border-radius: 1.5rem; // Custom border radius
+
+// Import Bootstrap's source Sass
+@import "../node_modules/bootstrap/scss/bootstrap";
+Step 5: Compile Sass to CSS
+Add a script in package.json to compile Sass:
+
+json
+Copy code
+"scripts": {
+  "build-css": "sass scss/custom.scss css/custom-bootstrap.css"
+}
+Then run:
+
+bash
+Copy code
+npm run build-css
+This will generate the CSS file with your customized Bootstrap styles inside css/custom-bootstrap.css.
+
+Usage in HTML
+Create an HTML file index.html:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Sass Customization</title>
+  <link rel="stylesheet" href="css/custom-bootstrap.css" />
+</head>
+<body>
+
+  <div class="container my-5">
+    <button class="btn btn-primary">Custom Primary Button</button>
+    <div class="card mt-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Custom Border Radius</h5>
+        <p class="card-text">This card uses customized border radius and primary color.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

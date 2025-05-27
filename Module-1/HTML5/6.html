@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Feedback Form</title>
+  <style>
+    .large-image {
+      width: 300px;
+    }
+    .small-image {
+      width: 150px;
+    }
+    form {
+      max-width: 400px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+    #charCount {
+      font-size: 0.9em;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<form>
+  <!-- Phone number field with onblur validation -->
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone" placeholder="Enter 10-digit phone" onblur="validatePhone()" required />
+
+  <!-- Dropdown with onchange to show event fee -->
+  <label for="event">Choose Event:</label>
+  <select id="event" onchange="showFee()">
+    <option value="">--Select--</option>
+    <option value="100">Music Festival</option>
+    <option value="50">Community Cleanup</option>
+    <option value="75">Art Workshop</option>
+  </select>
+  <p id="feeDisplay"></p>
+
+  <!-- Image with ondblclick to enlarge -->
+  <label>Event Poster (double-click to enlarge):</label><br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Concert_in_the_Park_2019_10.jpg/320px-Concert_in_the_Park_2019_10.jpg" 
+       alt="Event Poster" id="poster" class="small-image" ondblclick="toggleImageSize()" />
+
+  <!-- Feedback textarea with keypress character counter -->
+  <label for="feedback">Your Feedback:</label>
+  <textarea id="feedback" onkeyup="countChars()"></textarea>
+  <div id="charCount">Characters: 0</div>
+
+  <!-- Submit button with onclick confirmation -->
+  <button type="button" onclick="showConfirmation()">Submit Feedback</button>
+  <p id="confirmationMsg" style="color: green;"></p>
+</form>
+
+<script>
+  function validatePhone() {
+    const phone = document.getElementById("phone").value;
+    if (!/^\d{10}$/.test(phone)) {
+      alert("Please enter a valid 10-digit phone number.");
+    }
+  }
+
+  function showFee() {
+    const fee = document.getElementById("event").value;
+    document.getElementById("feeDisplay").textContent = fee ? `Event Fee: ₹${fee}` : '';
+  }
+
+  function toggleImageSize() {
+    const img = document.getElementById("poster");
+    if (img.classList.contains("small-image")) {
+      img.classList.remove("small-image");
+      img.classList.add("large-image");
+    } else {
+      img.classList.remove("large-image");
+      img.classList.add("small-image");
+    }
+  }
+
+  function countChars() {
+    const text = document.getElementById("feedback").value;
+    document.getElementById("charCount").textContent = "Characters: " + text.length;
+  }
+
+  function showConfirmation() {
+    document.getElementById("confirmationMsg").textContent = "Thank you for your feedback!";
+  }
+</script>
+
+</body>
+</html>
+
+
