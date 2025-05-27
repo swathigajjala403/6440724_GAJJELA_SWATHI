@@ -1,0 +1,24 @@
+// OperatorPrecedence.java
+public class OperatorPrecedence {
+    public static void main(String[] args) {
+        // Expression 1
+        int result1 = 10 + 5 * 2; // Multiplication happens before addition
+        System.out.println("Result of 10 + 5 * 2 = " + result1); // 10 + (5 * 2) = 20
+
+        // Expression 2
+        int result2 = (10 + 5) * 2; // Parentheses change the order
+        System.out.println("Result of (10 + 5) * 2 = " + result2); // (10 + 5) * 2 = 30
+
+        // Expression 3
+        int result3 = 20 - 4 / 2 + 3; // Division before subtraction and addition
+        System.out.println("Result of 20 - 4 / 2 + 3 = " + result3); // 20 - (4 / 2) + 3 = 21
+
+        // Expression 4
+        int result4 = 100 / 5 * 2 + 10; // Left to right for * and /
+        System.out.println("Result of 100 / 5 * 2 + 10 = " + result4); // (100 / 5) * 2 + 10 = 50
+
+        // Expression 5
+        int result5 = 5 + 2 * 3 - 1; // Multiplication first, then left to right
+        System.out.println("Result of 5 + 2 * 3 - 1 = " + result5); // 5 + (2 * 3) - 1 = 10
+    }
+}

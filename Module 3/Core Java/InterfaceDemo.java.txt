@@ -1,0 +1,34 @@
+// InterfaceDemo.java
+
+// Define the interface
+interface Playable {
+    void play();
+}
+
+// Guitar class implementing Playable
+class Guitar implements Playable {
+    @Override
+    public void play() {
+        System.out.println("Playing the guitar.");
+    }
+}
+
+// Piano class implementing Playable
+class Piano implements Playable {
+    @Override
+    public void play() {
+        System.out.println("Playing the piano.");
+    }
+}
+
+public class InterfaceDemo {
+    public static void main(String[] args) {
+        // Create objects of Guitar and Piano
+        Playable guitar = new Guitar();
+        Playable piano = new Piano();
+
+        // Call the play() method
+        guitar.play();  // Output: Playing the guitar.
+        piano.play();   // Output: Playing the piano.
+    }
+}

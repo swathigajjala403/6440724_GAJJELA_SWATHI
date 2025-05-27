@@ -1,0 +1,20 @@
+// TypeCastingExample.java
+public class TypeCastingExample {
+    public static void main(String[] args) {
+        // Declare a double variable
+        double myDouble = 9.78;
+        // Cast double to int (narrowing conversion)
+        int myInt = (int) myDouble;
+
+        // Declare an int variable
+        int number = 42;
+        // Cast int to double (widening conversion)
+        double convertedDouble = (double) number;
+
+        // Display results
+        System.out.println("Original double value: " + myDouble);
+        System.out.println("After casting to int: " + myInt);
+        System.out.println("Original int value: " + number);
+        System.out.println("After casting to double: " + convertedDouble);
+    }
+}
